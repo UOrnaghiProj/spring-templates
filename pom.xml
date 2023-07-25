@@ -17,4 +17,42 @@
     </modules>
 
     <!-- Other common configuration, dependencies, etc., can be added here -->
+    <!-- Common dependencies that will be inherited by all sub-modules -->
+    <dependencies>
+        <!-- Common dependency -->
+        <!-- START logging-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+            <version>3.1.1</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-logging</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <!-- END logging-->
+
+        <!-- START general artifact for web develop-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.28</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>3.1.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+            <version>3.1.2</version>
+        </dependency>
+        <!-- END general artifact for web develop-->
+    </dependencies>
 </project>
