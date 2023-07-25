@@ -13,6 +13,7 @@
     <modules>
         <!-- List all the module names (sub-projects) here -->
         <module>restapi</module>
+        <module>redistemplate</module>
         <!-- Add more modules as needed -->
     </modules>
 
