@@ -7,10 +7,10 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@ConfigurationProperties(prefix = "greeting")
-public class Greeting {
+@ConfigurationProperties(prefix = "conf.in")
+public class ConfInternal{
 
-    private String name;
+    private String nome;
     private String message;
 
 }

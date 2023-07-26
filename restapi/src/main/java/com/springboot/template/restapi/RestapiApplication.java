@@ -5,8 +5,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.context.properties.ConfigurationPropertiesScan;
 import org.springframework.context.annotation.Bean;
+import com.springboot.template.restapi.model.ConfExternal;
 
-import com.springboot.template.restapi.model.Father;
 
 @SpringBootApplication
 @ConfigurationPropertiesScan
@@ -17,9 +17,9 @@ public class RestapiApplication {
 	}
 
 	@Bean
-    @ConfigurationProperties(prefix = "father")
-    public Father getFather() {
-        return new Father();
+    @ConfigurationProperties(prefix = "conf.ext")
+    public ConfExternal getConfExternal() {
+        return new ConfExternal();
     }
 
 }

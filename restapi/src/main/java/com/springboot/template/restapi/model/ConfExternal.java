@@ -3,7 +3,7 @@ package com.springboot.template.restapi.model;
 import lombok.Data;
 
 @Data
-public class Father {
+public class ConfExternal {
     
     private String name;
     private String description;
