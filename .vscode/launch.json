@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MysqltemplateApplication",
+            "request": "launch",
+            "mainClass": "com.springboot.template.mysqltemplate.MysqltemplateApplication",
+            "projectName": "mysqltemplate"
+        },
+        {
+            "type": "java",
             "name": "Spring Boot-RestapiApplication<restapi>",
             "request": "launch",
             "cwd": "${workspaceFolder}",
