@@ -2,7 +2,10 @@
 this repository contains a simple Rest Api with the most common HTTP methods for retrieving from and sending data to a server.  
 GET, POST, PUT, PATCH, and DELETE  
   
-## Other components
+### Utility
+Data is loaded at start with the help of this utility class  
+`restapi\src\main\java\com\springboot\template\restapi\utility\DataLoader.java`
+### Configuration
 Sample configuration property from inside your project bind to this class:  
 `restapi\src\main\java\com\springboot\template\restapi\model\ConfInternal.java`
 
