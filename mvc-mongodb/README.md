@@ -12,5 +12,5 @@ https://hub.docker.com/_/mongo
 Use the same settings you find in the file `application.properties`
 
 ## Other components
-Webflux is used for create a client connection to a server  
+Webflux is used to create a client connection to a server  
 `mvc-mongodb\src\main\java\com\springboot\template\mvcmongodb\utility\DataLoader.java`
